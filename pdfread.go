@@ -9,13 +9,12 @@
 package pdfread
 
 import (
-	"code.google.com/p/pdfreader/fancy"
-	"code.google.com/p/pdfreader/hex"
-	"code.google.com/p/pdfreader/lzw"
-	"code.google.com/p/pdfreader/ps"
 	"compress/zlib"
 	"encoding/ascii85"
-	"log"
+	"github.com/1lann/go-pdfreader/fancy"
+	"github.com/1lann/go-pdfreader/hex"
+	"github.com/1lann/go-pdfreader/lzw"
+	"github.com/1lann/go-pdfreader/ps"
 	"regexp"
 )
 

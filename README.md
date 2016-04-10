@@ -9,7 +9,7 @@ Example how to use it
 package main
 
 import (
-	"code.google.com/p/pdfreader"
+	"github.com/1lann/go-pdfreader"
 	"flag"
 	"fmt"
 	"path"
