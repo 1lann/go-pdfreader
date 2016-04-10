@@ -13,6 +13,7 @@ package graf
 import (
 	"github.com/1lann/go-pdfreader/fancy"
 	"github.com/1lann/go-pdfreader/ps"
+	"github.com/1lann/go-pdfreader/stacks"
 	"github.com/1lann/go-pdfreader/strm"
 	"github.com/1lann/go-pdfreader/util"
 )

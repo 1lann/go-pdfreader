@@ -9,7 +9,7 @@
 package strm
 
 import (
-	"math/big"
+	"strconv"
 )
 
 func operand(s string) (r int64, f int) {
@@ -93,21 +93,9 @@ func String(a int64, f int) string {
 }
 
 func Mul(a, b string) string {
-	ra, rb, f := twop(a, b)
-	ar := big.Rat(ra, int64(f))
-	br := big.Rat(rb, int64(f))
-	i, n := ar.Mul(br).Value()
-	nv := n.Value()
-	d := uint64(1)
-	for d%nv != 0 {
-		d *= 10
-	}
-	i = i.Mul1(int64(d / nv))
-	if uint64(f) < d {
-		i = i.Div(big.Int(int64(d / uint64(f))))
-		d = uint64(f)
-	}
-	return String(i.Value(), int(d))
+	numA, _ := strconv.ParseFloat(a, 64)
+	numB, _ := strconv.ParseFloat(b, 64)
+	return strconv.FormatFloat(numA*numB, 'f', -1, 64)
 }
 
 func Add(a, b string) string {

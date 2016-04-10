@@ -10,8 +10,8 @@ package svg
 
 import (
 	"fmt"
+	"github.com/1lann/go-pdfreader"
 	"github.com/1lann/go-pdfreader/fancy"
-	"github.com/1lann/go-pdfreader/pdfread"
 	"github.com/1lann/go-pdfreader/strm"
 	"github.com/1lann/go-pdfreader/svgdraw"
 	"github.com/1lann/go-pdfreader/svgtext"

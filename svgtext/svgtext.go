@@ -298,7 +298,7 @@ func (t *SvgTextT) TShow(a []byte) {
 					t.Drw.TConfD.FontSize,
 					t.Style(t.Drw.TConfD.Font),
 					t.Drw.ConfigD.FillColor,
-					util.ToXML(tmp))
+					string(util.ToXML(tmp)))
 				t.x = res
 			}
 		} else {

@@ -74,7 +74,7 @@ func (m *CMapT) AddRange(from, to, dest int) {
 	}
 	for k := range m.Extended {
 		if k >= from && k < to {
-			m.Extended[k] = 0, false
+			delete(m.Extended, k)
 		}
 	}
 	r := new(CMapRangeT)
@@ -99,7 +99,7 @@ func (m *CMapT) AddDef(from, to, dest int) {
 	}
 	for k := range m.Extended {
 		if k >= from && k < to {
-			m.Extended[k] = 0, false
+			delete(m.Extended, k)
 		}
 	}
 	r := new(CMapRangeT)

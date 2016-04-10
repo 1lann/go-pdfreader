@@ -84,7 +84,8 @@ func (s *SvgT) EOClip()          {}
 
 func (s *SvgT) Concat(m [][]byte) {
 	s.Drw.Write.Out("<g transform=\"matrix(%s,%s,%s,%s,%s,%s)\">\n",
-		m[0], m[1], m[2], m[3], m[4], m[5])
+		string(m[0]), string(m[1]), string(m[2]), string(m[3]),
+		string(m[4]), string(m[5]))
 	s.groups++
 }
 

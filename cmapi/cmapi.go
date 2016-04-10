@@ -12,11 +12,11 @@ package cmapi
 //          It makes no sense to change anything here.
 
 import (
-	"cmapt"
-	"fancy"
-	"ps"
-	"util"
-	"xchar"
+	"github.com/1lann/go-pdfreader/cmapt"
+	"github.com/1lann/go-pdfreader/fancy"
+	"github.com/1lann/go-pdfreader/ps"
+	"github.com/1lann/go-pdfreader/stacks"
+	"github.com/1lann/go-pdfreader/xchar"
 )
 
 type CharMapperT struct {
