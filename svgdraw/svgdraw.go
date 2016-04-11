@@ -10,6 +10,7 @@ package svgdraw
 
 import (
 	"fmt"
+	"github.com/1lann/go-pdfreader/cmapi"
 	"github.com/1lann/go-pdfreader/graf"
 	"github.com/1lann/go-pdfreader/stacks"
 	"github.com/1lann/go-pdfreader/strm"
